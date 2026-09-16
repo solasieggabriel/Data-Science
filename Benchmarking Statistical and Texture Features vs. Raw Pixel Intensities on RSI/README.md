@@ -1,4 +1,4 @@
-# Benchmarking Statistical and Texture Features vs Raw Pixel Intensities on Remote Sensing Imagery
+# Texture Features vs Raw Pixel Intensities on Remote Sensing Imagery
 
 This study benchmarks the performance of an 8-qubit Variational Quantum Classifier (VQC) on remote sensing imagery (RSI), comparing the efficacy of classical dimensionality reduction against handcrafted feature engineering.
 
