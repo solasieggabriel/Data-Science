@@ -51,17 +51,17 @@ The convergence dynamics demonstrate that Model B achieves both superior optimiz
 | **Epoch Duration** | ~105.3 s | ~105.4 s | Identical |
 
 #### Key Findings
-- Model B (8 orthogonal features) outperformed Model A (raw pixels + PCA) by $+11.00%$ absolute test accuracy, correctly classifying $88$ more test images.
+- Model B (8 orthogonal features) outperformed Model A (raw pixels + PCA) by +11.00% absolute test accuracy, correctly classifying 88 more test images.
 - Model B beat Model A in every category, with the largest gains seen in structurally complex environments:
-    - Residential: $99.50%$ F1 vs. $82.05%$ ($+17.45%$ gain, achieving $99.5%$ precision and recall).
-    - AnnualCrop: $97.23%$ F1 vs. $86.49%$ ($+10.74%$ gain, with a $+16.50%$ recall).
-    - SeaLake: $87.28%$ F1 vs. $76.88%$ ($+10.40%$ gain).
-    - Forest: $89.55%$ F1 vs. $84.13%$ ($+5.42%$ gain).
-- Model B achieved a $68.3%$ relative reduction in training loss ($0.1869$ vs. $0.5904$) and a $69.5%$ lower validation loss ($0.1793$ vs. $0.5875$) under same epochs and runtime.
+    - Residential: 99.50% F1 vs. 82.05% (+17.45% gain, achieving 99.5% precision and recall).
+    - AnnualCrop: 97.23% F1 vs. 86.49% (+10.74% gain, with a +16.50% recall).
+    - SeaLake: 87.28% F1 vs. 76.88% (+10.40% gain).
+    - Forest: 89.55% F1 vs. 84.13% (+5.42% gain).
+- Model B achieved a 68.3% relative reduction in training loss (0.1869 vs. 0.5904) and a 69.5% lower validation loss (0.1793 vs. 0.5875) under same epochs and runtime.
 
-- Linear PCA could only capture $84.54%$ of total variance with 8 components while discarding the remaining $15.46%$ of detail as "noise", causing the model to plateau at $82.38% accuracy.
+- Linear PCA could only capture 84.54% of total variance with 8 components while discarding the remaining 15.46% of detail as "noise", causing the model to plateau at 82.38% accuracy.
 - Feeding four physical domains into the 8 qubits made each rotation angle $R_y(\theta_i)$ explore independent geometric axis, giving the 4-layer VQC much steeper loss gradients to separate classes.
-- The $+17.45%$ F1 jump in `Residential` accuracy proves that PCA blur out important details like street grids. Canny edge density and GLCM contrast preserved the distinct grid signals that PCA completely blurred out.
+- The +17.45% F1 jump in `Residential` accuracy proves that PCA blur out important details like street grids. Canny edge density and GLCM contrast preserved the distinct grid signals that PCA completely blurred out.
 - Reaching 93.38% accuracy using only 132 total parameters (96 quantum and 36 classical) highlights how powerful quantum circuits can be when paired with informed, non-linear classical feature maps.
 
 ## Final Conclusion
