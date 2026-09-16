@@ -23,11 +23,15 @@ The hybrid model integrates classical preprocessing with high-performance state-
 ## Summary of Results
 
 ![Comparison of Latent Space Separability](Comparison%20of%20Latent%20Space%20Separability.png)
+The 2D latent space projections confirm that Model B establishes well-defined, linearly separable cluster manifolds prior to quantum encoding—most notably isolating Residential along PC2—whereas Model A exhibits severe, diffused overlap among classes, directly explaining the 11% downstream accuracy advantage of handcrafted features.
 
 ![Confusion Matrix Benchmark](Confusion%20Matrix%20Benchmark.png)
+The confusion matrices reveal that Model B virtually eliminates the severe structural cross-confusion seen in Model A (e.g., 31 crop scenes and 22 water bodies misclassified as residential), achieving near-perfect 99.5% accuracy on Residential and confining minor residual errors solely to the natural optical boundary between dark water and dense forest.
 
 ![Training Convergence Dynamics](Training%20Convergence%20Dynamics.png)
 The convergence dynamics demonstrate that Model B achieves both superior optimization efficiency and higher generalization stability, descending to a 68% lower loss and surpassing 90% accuracy within 4 epochs, while Model A exhibits noisy oscillations and plateaus at an 11% accuracy deficit.
+
+### Head-to-Head Benchmark
 
 | Metric | Model A (Raw Pixels + PCA) | Model B (8 Orthogonal Features) | Model B Advantage ($\Delta$) |
 | :--- | :--- | :--- | :--- |
