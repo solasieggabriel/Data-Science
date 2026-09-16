@@ -22,6 +22,13 @@ The hybrid model integrates classical preprocessing with high-performance state-
 
 ## Summary of Results
 
+![Comparison of Latent Space Separability](Comparison%20of%20Latent%20Space%20Separability.png)
+
+![Confusion Matrix Benchmark](Confusion%20Matrix%20Benchmark.png)
+
+![Training Convergence Dynamics](Training%20Convergence%20Dynamics.png)
+The convergence dynamics demonstrate that Model B achieves both superior optimization efficiency and higher generalization stability, descending to a 68% lower loss and surpassing 90% accuracy within 4 epochs, while Model A exhibits noisy oscillations and plateaus at an 11% accuracy deficit.
+
 | Metric | Model A (Raw Pixels + PCA) | Model B (8 Orthogonal Features) | Model B Advantage ($\Delta$) |
 | :--- | :--- | :--- | :--- |
 | **Final Test Accuracy** | 82.38% (659/800) | 93.38% (747/800) | +11.00% (+88 images correct) |
