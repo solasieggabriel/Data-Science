@@ -23,7 +23,7 @@ The hybrid model integrates classical preprocessing with high-performance state-
 ## Summary of Results
 
 ![Comparison of Latent Space Separability](Comparison%20of%20Latent%20Space%20Separability.png)
-The 2D latent space projections confirm that Model B establishes well-defined, linearly separable cluster manifolds prior to quantum encoding—most notably isolating Residential along PC2—whereas Model A exhibits severe, diffused overlap among classes, directly explaining the 11% downstream accuracy advantage of handcrafted features.
+The 2D projection plots show that Model B clearly separates the classes before quantum encoding, especially isolating Residential along the second principal component, while Model A's classes heavily overlap.
 
 ![Confusion Matrix Benchmark](Confusion%20Matrix%20Benchmark.png)
 The confusion matrices reveal that Model B virtually eliminates the severe structural cross-confusion seen in Model A (e.g., 31 crop scenes and 22 water bodies misclassified as residential), achieving near-perfect 99.5% accuracy on Residential and confining minor residual errors solely to the natural optical boundary between dark water and dense forest.
