@@ -7,7 +7,7 @@ In the Noisy Intermediate-Scale Quantum (NISQ) era, encoding high-resolution ima
 
 ## Dataset and Methodology
 The experiment utilizes the Sentinel-2 Land Cover dataset (EuroSAT_RGB) consisting of 64x64 pixel RGB images.
-* **Classes**: The dataset includes a balanced sample of 4000 images across four distinct categories (1000 images for each): SeaLake, Forest, Residential, AnnualCrop.
+* **Classes**: The dataset includes a balanced sample of 4000 images across four distinct categories (1000 images for each): SeaLake, Forest, Residential, AnnualCrop. (https://www.kaggle.com/datasets/salmaadell/eurosat-rgb)
 * **Data Splitting**: The data is stratified into an 80% training set (3200 samples) and a 20% testing set (800 samples) using a fixed random seed.
 * **Model A (Raw Pixels)**: Raw image arrays are flattened and compressed down to exactly 8 principal components using PCA.
 * **Model B (Engineered Features)**: Extracts 8 specific domain features: Mean Blue, Intensity Standard Deviation, Grayscale Skewness, Green-Red Spectral Index (GRSI), GLCM Contrast, GLCM Energy, GLCM Correlation, Canny Edge Density.
