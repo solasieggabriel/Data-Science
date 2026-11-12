@@ -81,7 +81,7 @@ Because defaults represent only ~11% of applicants, established **PR-AUC (Precis
 
 ---
 
-## TreeSHAP and Banking Compliance
+## TreeSHAP and Banking Compliance (Light GBM)
 
 ### A. Global Risk Drivers (Beeswarm Analysis)
 Over 70% of the model's total decision weight is driven by four core fundamentals:
@@ -99,7 +99,7 @@ By mapping SHAP values back to original real-world units, the framework automati
 
 ---
 
-## Confusion Matrix Error Slicing (Auditing Model Failures)
+## Confusion Matrix Error Slicing (Light GBM)
 
 By breaking down mean feature impact across the four confusion matrix quadrants, audited the root causes of model accuracy and failure:
 
