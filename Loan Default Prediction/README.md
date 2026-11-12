@@ -68,11 +68,11 @@ Because defaults represent only ~11% of applicants, established **PR-AUC (Precis
 
 | Rank | Model Paradigm | CV PR-AUC (Mean) | CV PR-AUC (Std) | CV ROC-AUC (Mean) | Test PR-AUC | Test ROC-AUC |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| 1 | **3. LightGBM (Leaf-Wise Boosting)** | **0.6315** | $\pm 0.0214$ | **0.8772** | **0.6395** | **0.8787** |
-| 2 | **2. XGBoost (Level-Wise Boosting)** | 0.6301 | $\pm 0.0219$ | 0.8764 | 0.6375 | 0.8791 |
-| 3 | **4. Neural Network (MLP: 64-32)** | 0.6241 | $\pm 0.0192$ | 0.8764 | 0.6318 | 0.8739 |
-| 4 | **1. Logistic Regression (Baseline)** | 0.6060 | $\pm 0.0231$ | 0.8700 | 0.6062 | 0.8695 |
-| 5 | **5. Random Forest (Bagging)** | 0.5905 | $\pm 0.0183$ | 0.8728 | 0.5975 | 0.8731 |
+| 1 | **LightGBM (Leaf-Wise Boosting)** | **0.6315** | $\pm 0.0214$ | **0.8772** | **0.6395** | **0.8787** |
+| 2 | **XGBoost (Level-Wise Boosting)** | 0.6301 | $\pm 0.0219$ | 0.8764 | 0.6375 | 0.8791 |
+| 3 | **Neural Network (MLP: 64-32)** | 0.6241 | $\pm 0.0192$ | 0.8764 | 0.6318 | 0.8739 |
+| 4 | **Logistic Regression (Baseline)** | 0.6060 | $\pm 0.0231$ | 0.8700 | 0.6062 | 0.8695 |
+| 5 | **Random Forest (Bagging)** | 0.5905 | $\pm 0.0183$ | 0.8728 | 0.5975 | 0.8731 |
 
 ### Key Benchmark Findings:
 *  All 5 models scored virtually identical ROC-AUC scores (~0.870 to 0.879), while PR-AUC showed a **4.9 percentage point performance gap** between Random Forest and LightGBM.
