@@ -111,7 +111,7 @@ FP: False Alarm (Lost Customer)      27.2%           16.1%          8.1%        
 FN: Missed Defaulter (Danger!)       14.2%           18.4%          7.0%        15.0%          11.7%          33.7%
 TN: Clean Approval                   21.9%           17.2%          8.0%        13.8%          10.4%          28.7%
 ```
-![Top Decision Drivers per Quadrant](Top%20Decision%20Drivers%20per%20Quadrant.png)
+![Top Decision Drivers per Quadrant](Decision%20Drivers%20per%20Quadrant.png)
 
 * **Why the model caught defaulters (TP):** `credit_score` dominated with **35.8% of the total decision weight**—severe bureau delinquencies triggered an immediate decline.
 * **Why the model missed defaulters (FN):** For borrowers who slipped through, `credit_score` impact collapsed to only **14.2%**. Because their credit bureau report appeared deceptively clean, the model's primary alert system was neutralized, allowing them to be approved despite dangerous debt burdens.
